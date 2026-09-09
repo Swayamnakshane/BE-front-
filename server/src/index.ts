@@ -11,10 +11,22 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // --- 1. CONFIGURATION (Your Credentials) ---
-const TWILIO_SID = "REDACTED";
-const TWILIO_TOKEN = "941a127939e3712089553f6fd0e95cc6";
-const WHATSAPP_FROM = "whatsapp:+14155238886";
-const TARGET_PHONE = "whatsapp:+917875138495"; 
+const TWILIO_SID = process.env.TWILIO_SID;
+const TWILIO_TOKEN = process.env.TWILIO_TOKEN;
+
+const WHATSAPP_FROM = process.env.WHATSAPP_FROM;
+const TARGET_PHONE = process.env.TARGET_PHONE;
+
+if (!TWILIO_SID || !TWILIO_TOKEN || !WHATSAPP_FROM || !TARGET_PHONE) {
+  throw new Error("Missing Twilio environment variables");
+}
+
+
+
+// const TWILIO_SID = process.env.TWILIO_SID;;
+// const TWILIO_TOKEN = process.env.TWILIO_TOKEN;
+// const WHATSAPP_FROM = "whatsapp:+14155238886";
+// const TARGET_PHONE = "whatsapp:+917875138495"; 
 
 const EMAIL_USER = "kunalz2308@gmail.com";
 const EMAIL_PASS = "ucbr bekh dsgg pakc";
