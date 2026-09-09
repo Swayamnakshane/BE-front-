@@ -11,6 +11,8 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // --- 1. CONFIGURATION (Your Credentials) ---
+import "dotenv/config";
+
 const TWILIO_SID = process.env.TWILIO_SID;
 const TWILIO_TOKEN = process.env.TWILIO_TOKEN;
 
