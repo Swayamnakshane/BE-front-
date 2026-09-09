@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulmoSight AI | Professional Clinical Diagnostic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --clinical-blue: #0ea5e9;
+        --clinical-bg: #0f172a;
+        --clinical-border: rgba(255, 255, 255, 0.08);
+      }
+      body {
+        background-color: var(--clinical-bg);
+        color: #f1f5f9;
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      
+      /* Professional Background Gradient */
+      .bg-clinical-mesh {
+        background-color: var(--clinical-bg);
+        background-image: 
+          radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.1) 0px, transparent 50%),
+          radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.05) 0px, transparent 50%);
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(14, 165, 233, 0.2);
+        border-radius: 10px;
+        border: 2px solid #0f172a;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(14, 165, 233, 0.4);
+      }
+
+      .glass-card {
+        background: rgba(30, 41, 59, 0.5);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid var(--clinical-border);
+        box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "framer-motion": "https://esm.sh/framer-motion@^12.26.2",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "jspdf": "https://esm.sh/jspdf@^4.0.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-clinical-mesh">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

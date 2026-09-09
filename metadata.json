@@ -1,0 +1,7 @@
+{
+  "name": "PulmoSight AI - Medical Sci-Fi Diagnostic System",
+  "description": "A high-fidelity pulmonary diagnostic interface using advanced AI for X-ray analysis, featuring holographic scanning effects and a glassmorphic dashboard.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
